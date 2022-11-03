@@ -7,9 +7,9 @@ const inputEl = document.querySelector('input#search-box');
 const countryList = document.querySelector('.country-list');
 const countryInfoBox = document.querySelector('.country-info');
 
-// inputEl.addEventListener('input', onCountryInput);
+inputEl.addEventListener('input', onCountryInput);
 
-inputEl.addEventListener('input', _.debounce(onCountryInput, DEBOUNCE_DELAY));
+// inputEl.addEventListener('input', _.debounce(onCountryInput, DEBOUNCE_DELAY));
 
 function onCountryInput(e) {
     e.preventDefault()
